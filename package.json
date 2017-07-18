@@ -30,7 +30,9 @@
   "homepage": "https://github.com/Annakluz/yape#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-obfuscate": "^0.2.9",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
     "materialize": "^1.0.0"
   }
 }

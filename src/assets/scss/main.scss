@@ -15,21 +15,25 @@ $Moradodark: #38052a;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Product Sans', Arial, sans-serif;
     color:#424242;
 }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0px, auto;
+.carousel-container{
+    display: grid;
+
 }
 
 .amarillo{
     background-color: $Amarillo-botones;
 }
 
-.img-carousel{
-    height: 50vh;
-    width: 50vw;
+.carousel .carousel-slider{
+    height: 60vh !important;
+    
 }
+
+img{
+    height: 50%;
+}
+
+

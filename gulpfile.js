@@ -18,8 +18,6 @@ gulp.task("prepararHTML", function(){
 
 gulp.task("prepararJS", function(){
     gulp.src(rutas.rutaJS)
-    .pipe(uglify())
-    .pipe(obfuscate())
     .pipe(gulp.dest("public"))
 });
 

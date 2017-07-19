@@ -64,3 +64,11 @@ $Moradodark: #38052a;
         margin-top: 10vh;
     }
 }
+
+.registro-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 25vh 50vh;
+}
+
+

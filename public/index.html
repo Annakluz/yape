@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div>
-        <div></div>
-        <!--nav-->
-        <div>
-            <div class="carousel carousel-slider center" data-indicators="true">
-                <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-                </div>
-                <div class="carousel-item red white-text" href="#one!">
-                   <img src="img/icons/happy-person.png" alt="">
-                    <h2>First Panel</h2>
-                    <p class="white-text">This is your first panel</p>
-                </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
-                </div>
-                <div class="carousel-item green white-text" href="#three!">
-                    <h2>Third Panel</h2>
-                    <p class="white-text">This is your third panel</p>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                    <h2>Fourth Panel</h2>
-                    <p class="white-text">This is your fourth panel</p>
-                </div>
+    <div class="index-container">
+        <div class="carusel-container">
+            <div class="carousel center" data-indicators="true" >
+                <a class="carousel-item" href="#one!"><img src="img/icons/happy-person.png"><h5>PAGA A TUS AMIGOS</h5>
+                Paga a quien quieras donde quieras sin usar efectivo.</a>
+                <a class="carousel-item" href="#two!"><img src="img/icons/icon-people.png"></a>
+                <a class="carousel-item" href="#three!"><img src="img/icons/group-people.png"></a>
+
             </div>
         </div>
+        <!--nav-->
+
+        <div class="btn-container">
+            <a href="#" class="btn amarillo white-text ">REGISTRARSE</a>
+        </div>
         <!--img-->
-        <div></div>
-        <!--texto-->
-        <div></div>
-        <!--footer-->
     </div>
 
-    <script src="static/jquery/dist/jquery.min.js"></script>
-    <script src="static/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

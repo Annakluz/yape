@@ -7,34 +7,60 @@ $Turquesa-Terminos: #00c3a3;
 $Morado-Entrada-Numeros: #49233b;
 $Moradolight: #451e36;
 $Moradodark: #38052a;
-
-
-
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color:#424242;
+    color: #424242;
 }
 
-.carousel-container{
+.index-container {
     display: grid;
-
+    grid-template-rows: 80vh 30vh;
+    grid-template-columns: 1fr;
 }
 
-.amarillo{
+.carusel-container {
+    background-color: white;
+    .carousel {
+        height: 100%;
+    }
+    a {
+        padding-top: -30vh;
+        padding-bottom: 10vh;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.carousel {
+    .indicators {
+        .indicator-item {
+                background-color: grey;
+            }
+        }
+    }
+
+.carousel {
+    .indicators {
+        .indicator-item.active {
+                background-color: red;
+            }
+        }
+    }
+
+
+.amarillo {
     background-color: $Amarillo-botones;
 }
 
-.carousel .carousel-slider{
-    height: 60vh !important;
-    
+.btn-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    a {
+        width: 40vh;
+        text-align: center;
+        margin-top: 10vh;
+    }
 }
-
-img{
-    height: 50%;
-    
-}
-
-

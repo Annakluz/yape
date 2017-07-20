@@ -1,16 +1,16 @@
 const url           = "http://localhost:3000/api/registerNumber"; 
 const $form         = $("#form");
-const $registrarse  =$("#registroContinuar");
 const $telefono     =$("#telefono");
-const $check        =$("#check");
+const $check        =$("#test5");
+const $registrarse  =$("#registroContinuar");
 
 
 
 let cargar = () =>{
     $form.submit(preven); //llama a la funcion que evita recargar la pagina .
+    $telefono.keyup(validar);
+
     
-    $check.click()
-   
 }//arrow function
 
 let preven =(e) => {
@@ -18,18 +18,23 @@ let preven =(e) => {
    
 }
 
-let valido =()=> {
-    
-    let numeroDigitos = $telefono.keyup();
-    
-    if (numeroDigitos.lenght == 10 && $registrarse.is(":checked") == true) {
-       $registrarse.removeAttr("disabled"); 
+let validar =()=> {
+    if ($telefono.val().length == 10){
+        $registrarse.removeAttr("disabled");
     }
-    else{
-        alert("Número Incorrecto");
-    }
+    
+    
 }
 
 $(document).ready(cargar);
 
 
+/*let $numeroDigitos = $telefono.length;
+    
+    if ($numeroDigitos.lenght == 10 ) {
+       $registrarse.removeAttr("disabled"); 
+    }
+    else{
+        alert("Número Incorrecto");
+    }
+*/

@@ -10,6 +10,7 @@ let cargar = () =>{
     $form.submit(preven); //llama a la funcion que evita recargar la pagina .
     $telefono.keyup(validar);
     $check.click(validar);
+    $registrarse.click(generaCodigo); //llama a la funcion que genera el codigo usuario.
 
     
 }//arrow function
@@ -27,6 +28,22 @@ let validar =()=> {
     
     
 }
+
+let generaCodigo = ()=>{
+    $.post(url, {'phone': $telefono.val(), 'terms': true },function(res){
+        console.log(res);
+        localStorage.setItem("tel", res.data.phone);
+        localStorage.setItem("codigo", res.data.code);
+    });
+} 
+
+
+/*{
+    $.post( url , { 'phone': $telefono.val() , 'terms':true }, function (res){
+        localStorage.setItem("tel", res.data.phone );
+        console.log(localStorage.getItem("tel")
+    };
+});*/
 
 $(document).ready(cargar);
 

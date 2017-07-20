@@ -1,5 +1,5 @@
 const url           = "http://localhost:3000/api/registerNumber"; 
-const $form         = $("#form");
+const $form         = $("#formulario");
 const $telefono     =$("#telefono");
 const $check        =$("#test5");
 const $registrarse  =$("#registroContinuar");
@@ -16,7 +16,7 @@ let cargar = () =>{
 }//arrow function
 
 let preven =(e) => {
-    e.preventDefault;
+    e.preventDefault();
    
 }
 
@@ -35,25 +35,21 @@ let generaCodigo = ()=>{
         localStorage.setItem("tel", res.data.phone);
         localStorage.setItem("codigo", res.data.code);
     });
-} 
+};
+
+//agregar todo en el mismo JS para evitar localStorage
+let agregarNumero = () =>{
+    //appendchid data.phone a id confirmacionTel 
+    //lanzar codigo en alert 
+    //poner pattern en html :expresion regular.
+};
 
 
-/*{
-    $.post( url , { 'phone': $telefono.val() , 'terms':true }, function (res){
-        localStorage.setItem("tel", res.data.phone );
-        console.log(localStorage.getItem("tel")
-    };
-});*/
+
+
+
 
 $(document).ready(cargar);
 
 
-/*let $numeroDigitos = $telefono.length;
-    
-    if ($numeroDigitos.lenght == 10 ) {
-       $registrarse.removeAttr("disabled"); 
-    }
-    else{
-        alert("Número Incorrecto");
-    }
-*/
+

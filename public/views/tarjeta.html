@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+    <div class="tarjeta-contenedor">
+        <!--imagen-->
+        <div>
+            <img src="../img/icons/bcp-logo.png" alt="">
+        </div>
+        <!--texto-->
+        <div>
+            <h5>Registra tu tarjeta de debito BCP</h5>
+            <p>Por ahora solo aceptamos cuentas de ahorro o corriente en soles </p>
+        </div>
+        <!--form-->
+        <div>
+
+            <form class="col s12" id="formularioTarjeta">
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons large prefix">payment</i>
+
+                        <input id="usuarioNombre" type="tel" class="validate">
+                        <label for="payment"></label>
+                    </div>
+
+                </div>
+                <div>
+                    <a href="">Escanear tarjeta</a>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <p>Fecha de Vencimiento</p>
+                        <input id="usuarioCorreo" type="tel" class="validate" placeholder="dia / mes">
+                    </div>
+
+                </div>
+                
+                <button class="btn amarillo " id="registroContinuar" href="#" disabled="disabled">Continuar</button>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="../assets/registro.js"></script>
+</body>
+
+</html>

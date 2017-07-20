@@ -9,6 +9,7 @@ const $registrarse  =$("#registroContinuar");
 let cargar = () =>{
     $form.submit(preven); //llama a la funcion que evita recargar la pagina .
     $telefono.keyup(validar);
+    $check.click(validar);
 
     
 }//arrow function
@@ -19,7 +20,8 @@ let preven =(e) => {
 }
 
 let validar =()=> {
-    if ($telefono.val().length == 10){
+    
+    if ($telefono.val().length == 10 && $check.is(':checked')=== true ){
         $registrarse.removeAttr("disabled");
     }
     

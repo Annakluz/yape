@@ -13,22 +13,22 @@
     <!--Contenedor-->
     <div class="registro-contenedor">
         <!--imagen-->
-        <div>
+        <div class="img-cabecera">
             <img src="../img/icons/phone.png" alt="">
         </div>
         <!--texto-->
-        <div>
-            <h5>Para comenzar validemos tu número</h5>
+        <div class="texto-centro">
+            <h3>Para comenzar validemos tu número</h3>
             <p>Recibirásn un SMS con el código de validación</p>
         </div>
         <!--form-->
-        <div>
+        
             
-                <div class="row">
-                    <form class="col s12" id="formulario">
+                <div class="form-container" >
+                    <form class="inputs" id="formulario">
 
-                        <div class="row">
-                            <div class="input-field col s6">
+                        <div>
+                            <div class="input-field">
                                 <i class="material-icons large prefix">phone_iphone</i>
 
                                 <input id="telefono" type="tel" class="validate">
@@ -37,15 +37,15 @@
                         </div>
                         <p>
                             <input type="checkbox" id="test5" />
-                            <label for="test5">Red</label>
+                            <label for="test5">Acepto <a href="#">Terminos y condiciones </a> </label>
                         </p>
-                        <button class="btn amarillo " id="registroContinuar" href="#" disabled="disabled">registrarse</button>
+                        <button class="btn amarillo texto-centro " id="registroContinuar" href="#" disabled="disabled">registrarse</button>
                     </form>
                 </div>
 
             
         </div>
-    </div>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script src="../assets/registro.js"></script>

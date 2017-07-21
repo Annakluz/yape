@@ -38,7 +38,8 @@ let generaCodigo = ()=>{
 };
 
 //agregar todo en el mismo JS para evitar localStorage
-let agregarNumero = () =>{
+let agregarNumero = (res) =>{
+    console.log(res);
     //appendchid data.phone a id confirmacionTel 
     //lanzar codigo en alert 
     //poner pattern en html :expresion regular.

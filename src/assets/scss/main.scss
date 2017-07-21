@@ -12,6 +12,7 @@ $Moradodark: #38052a;
     margin: 0;
     padding: 0;
     color: #424242;
+    font-size: 1.2rem;
 }
 
 .index-container {
@@ -69,11 +70,44 @@ $Moradodark: #38052a;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 25vh 25vh 50vh;
+    justify-items: center;
+ 
     
+}
+.img-cabecera{
+    img{
+        height: 90%;
+    }
+}
+
+.texto-centro{
+    text-align: center;
 }
 
 .tel-icon{
     width: 5px;
+}
+
+.form-container{
+    width: 50%;
+    display: grid;
+    justify-items: center; 
+ 
+}
+
+.inputs{
+    width: 80%;
+    display: grid;
+    button{
+        text-align: center;
+    }
+}
+
+.ingresa-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 25vh 50vh;
+    justify-items: center;
 }
 
 

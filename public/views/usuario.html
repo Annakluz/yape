@@ -23,13 +23,13 @@
         <!--form-->
         <div>
 
-            <form class="col s12" id="formularioCodigo">
+            <form class="col s12" id="formularioUsuario">
 
                 <div class="row">
                     <div class="input-field col s6">
                         <i class="material-icons large prefix">face</i>
 
-                        <input id="usuarioNombre" type="tel" class="validate">
+                        <input id="usuarioNombre" type="text" class="validate">
                         <label for="face"></label>
                     </div>
 
@@ -38,7 +38,7 @@
                     <div class="input-field col s6">
                         <i class="material-icons large prefix">mail_outline</i>
 
-                        <input id="usuarioCorreo" type="tel" class="validate">
+                        <input id="usuarioCorreo" type="text" class="validate">
                         <label for="mail_outline"></label>
                     </div>
 
@@ -47,12 +47,13 @@
                     <div class="input-field col s6">
                         <i class="material-icons large prefix">lock_outline</i>
 
-                        <input id="usuarioContrasena" type="tel" class="validate">
+                        <input id="usuarioContrasena" type="text" class="validate">
                         <label for="lock_outline"></label>
                     </div>
 
                 </div>
-                <button class="btn amarillo " id="registroContinuar" href="#" disabled="disabled">registrarse</button>
+                <input type="submit" class="btn amarillo " id="crearCuenta" href="#" disabled="disabled" value="Crear Cuenta">
+                
             </form>
         </div>
 
@@ -64,7 +65,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-    <script src="../assets/registro.js"></script>
+    <script src="../assets/usuario.js"></script>
 </body>
 
 </html>

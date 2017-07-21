@@ -30,20 +30,24 @@ let validar =()=> {
 }
 
 let generaCodigo = ()=>{
-    $.post(url, {'phone': $telefono.val(), 'terms': true },function(res){
-        console.log(res);
-        localStorage.setItem("tel", res.data.phone);
-        localStorage.setItem("codigo", res.data.code);
+    $.post(url, {'phone': $telefono.val(), 'terms': true },function(respuesta){
+        console.log(respuesta);
+        if(respuesta.success == true){
+            location.href = "ingresa.html";
+            
+        }
+        localStorage.setItem("tel", respuesta.data.phone);
+        localStorage.setItem("codigo", respuesta.data.code);
     });
 };
 
-//agregar todo en el mismo JS para evitar localStorage
-let agregarNumero = (res) =>{
-    console.log(res);
+
+//let agregarNumero = (respuesta) =>{
+    //console.log(respuesta);
     //appendchid data.phone a id confirmacionTel 
     //lanzar codigo en alert 
     //poner pattern en html :expresion regular.
-};
+
 
 
 

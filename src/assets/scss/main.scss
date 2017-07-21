@@ -66,11 +66,12 @@ $Moradodark: #38052a;
     }
 }
 
-.registro-contenedor .ingresa-contenedor{
+.registro-contenedor .ingresa-contenedor .tarjeta-contendero{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 25vh 25vh 50vh;
     justify-items: center;
+    justify-content: center;
  
     
 }
@@ -110,4 +111,44 @@ $Moradodark: #38052a;
     justify-items: center;
 }
 
+.listo-contenedor{
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;    
+    background-color: $Amarillo-botones;
+    color: $Moradolight;
+    img{
+        margin-top: -20vh;
+    }
+    
+}
+
+.texto-morado{
+    padding-top: 1vh;
+    margin-top: -30vh;
+}
+
+.formulario-padding{
+    margin-left: 25vw;
+}
+.form-padding{
+    padding-left: 25vw;
+    padding-right: 25vw;
+}
+
+.app-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 60vh;
+}
+
+.cabecera-container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    img{
+        grid-column-start: 2;
+    }
+}
 
